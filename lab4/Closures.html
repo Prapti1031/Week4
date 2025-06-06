@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function outterFunction(a) {
+        function innerFunction(b) {
+          return a * b;
+        }
+        return innerFunction;
+      }
+
+      let square = outterFunction(8);
+      let ans = square(5);
+      // alert(ans);
+    </script>
+
+    <script>
+      window.y = 10; //creates a global variable
+
+      alert(x);
+      var x = 10;
+      for (let i = 0; i < 10; i++) {
+        let a = 10;
+      }
+
+      function factor(times) {
+        function multiplier(num) {
+          return num * times;
+        }
+
+        return multiplier;
+      }
+
+      let timesThree = factor(3);
+      let answer = timesThree(5);
+      // alert(answer);
+
+      let timesTen = factor(10);
+      let answer10 = timesTen(5);
+      //  alert(answer10);
+    </script>
+  </body>
+</html>
